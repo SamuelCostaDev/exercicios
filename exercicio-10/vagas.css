@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(1, 11, 33, 0.886);
+}
+
+h1 {
+    position: relative;
+}
+.h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(189, 204, 212);
+    min-height: 100vh;
+}
+
+.h1 {
+    letter-spacing: 10px;
+    font-size: 3.5rem;
+}
