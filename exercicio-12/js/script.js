@@ -80,7 +80,7 @@ function cadastrasr() {
   
     const habilidadeCell = document.createElement("td");
     habilidadeCell.textContent = habilidadeValue;
-    
+
     tableBody.innerHTML = '';
 
 
@@ -91,8 +91,18 @@ function cadastrasr() {
   
     document.getElementById("name").value = "";
     document.getElementById("habilidade").value = "";
-    const modal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
-    modal.hide();
+    $('#staticBackdrop').modal('hide');
   }
   
+}
+
+function removerUltimoCadastro() {
+  const tbody = document.querySelector("table.table tbody");
+  const rows = tbody.getElementsByTagName("tr");
+
+  // Verifica se há pelo menos uma linha na tabela
+  if (rows.length > 0) {
+    // Remove a última linha da tabela
+    tbody.removeChild(rows[rows.length - 1]);
+  }
 }
