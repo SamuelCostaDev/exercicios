@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro de Devs</title>
+</head>
+<body>
+    <header>
+        <section>
+            <div>
+                <h2>Bem vindo a página de Cadastro Devs</h2>
+            </div>
+            <div>
+                <p>Aqui você pode fazer o seu cadastro, para recrutadores poderem te encontrar.</p>
+            </div>
+        </section>
+    </header>
+
+    <section class="cadastro">
+        <div>
+            <h3>Faça seu cadastro aqui</h3>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Cadastrar-se
+            </button>
+        </div>    
+    </section>
+    <section class="flex-container">
+        <div>
+            <table class="table" id="table2">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome do Programador</th>
+                    <th scope="col">Linguagem</th>
+
+                    <th scope="col">Ano de Experiência</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </section>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <section>
+                <form action="">
+                  <fieldset>
+                    <div id="technologies-container">
+                      <label for="name" class="form-label">Nome do programador:</label>
+                      <input type="text" class="form-control" id="name">
+                      <div class="table-container"></div>
+                    </div>
+                    <div id="habs">
+                      <label for="name" class="form-label">Habilidades de Especialidade:</label>
+                      <input type="text" class="form-control" id="habilidade" placeholder="Escreva o nome da habilidade">
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button type="button" class="btn btn-secondary btn-lg" id="btn" onclick="addTechnology()">Adicionar tecnologia</button>
+                    </div>
+                  </fieldset>
+                </form>
+              </section>
+
+              <section>
+                <div>
+                  <table class="table table-bordered" id="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="4" id="cel">Anos de Experiência</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+            </section>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="cadastrasr()">Cadastrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

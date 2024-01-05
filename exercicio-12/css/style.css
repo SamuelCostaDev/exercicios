@@ -1,0 +1,24 @@
+header {
+    text-align: center;
+}
+.radio{
+    margin-left: 15px;
+}
+
+#cel {
+    text-align: center;
+}
+#table2 {
+    width: 500px;
+}
+#btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cadastro{
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
